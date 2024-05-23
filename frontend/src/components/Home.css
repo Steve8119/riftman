@@ -1,0 +1,110 @@
+/* Home.css */
+
+/* Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Main Container Styles */
+  .home-container {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    
+  }
+  
+  /* Welcome Section Styles */
+  .welcome {
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(95, 87, 87, 0.5);
+    border-radius: 10px;
+    border: 4px solid black; /* Adding black border with 4px thickness */
+    position: center; /* Position fixed to remain at the bottom */
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    animation: slideIn 1s ease forwards; /* Apply animation */
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(100%); /* Start animation from below */
+      opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+      transform: translateY(0); /* End animation at its position */
+      opacity: 1; /* End with full opacity */
+    }
+  }
+  
+  
+
+ 
+  
+  
+  /* Heading Styles */
+  .home-text {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Description Styles */
+  .home-description {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .home-container {
+      background-size: contain;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .home-text {
+      font-size: 2rem;
+    }
+  
+    .home-description {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Additional Styles */
+  /* Add your additional styles here */
+  /* Home.css */
+
+.arrow-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: floatArrow 2s infinite ease-in-out;
+  z-index: 999; /* Ensure it appears above other content */
+}
+
+.arrow-down svg {
+  width: 140px; /* Increase the size of the arrow */
+  height: auto;
+  fill: #007bff;
+  cursor: pointer;
+}
+
+@keyframes floatArrow {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
+}

@@ -1,0 +1,63 @@
+/* Services.css */
+
+#services {
+  padding: 80px 0;
+  background-color: #f9f9f9; /* Background color for the services section */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-md-4 {
+  flex: 0 0 calc(33.333% - 20px);
+  margin-bottom: 40px; /* Increase margin between service cards */
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%; /* Set fixed height */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-title {
+  font-size: 1.8rem; /* Increase title font size */
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1.2rem; /* Increase text font size */
+  color: #666;
+  line-height: 1.6; /* Increase line height for better readability */
+}
+
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+  }
+}

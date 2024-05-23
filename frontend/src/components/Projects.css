@@ -1,0 +1,90 @@
+/* Projects.css */
+
+.projects-container {
+  text-align: center;
+  padding: 20px;
+  background-color: antiquewhite;
+}
+
+.title {
+  text-align: start;
+  font-size: medium;
+  margin-top: 0%;
+  margin-bottom: 3%;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Automatically adjust columns based on available width */
+  gap: 20px;
+}
+
+.project {
+  position: relative;
+  overflow: hidden;
+  height: 300px; /* Adjust the height as needed */
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project:hover img {
+  transform: scale(1.1);
+}
+
+.hover-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  color: #fff;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  transition: opacity 0.3s ease;
+}
+
+.project:hover .hover-box {
+  opacity: 1;
+}
+
+.hover-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.hover-box p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.see-more-btn {
+  margin-top: 20px; /* Adjust spacing */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 3%;
+}
+
+.see-more-btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column size for smaller screens */
+  }
+
+  .project {
+    height: 250px; /* Adjust project height for smaller screens */
+  }
+}

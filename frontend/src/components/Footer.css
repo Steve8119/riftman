@@ -1,0 +1,49 @@
+/* Footer.css */
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer h5 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer ul li a:hover {
+  color: #ffc107; /* Change hover color */
+}
+
+.footer ul li i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  background-color: #222;
+  color: #ccc;
+  padding: 20px 0;
+  font-size: 14px;
+}

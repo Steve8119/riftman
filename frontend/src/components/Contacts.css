@@ -1,0 +1,36 @@
+.contacts-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  .contacts-container h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contacts-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .contact-info li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .contact-info li i {
+    margin-right: 10px;
+    @extend .classA .child;
+  }
+  
