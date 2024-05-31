@@ -1,7 +1,5 @@
-// ProjectModal.js
-
 import React from 'react';
-import './ProjectModal.css'; // Assuming you have a ProjectModal.css file for styling
+import './ProjectModal.css';
 
 const ProjectModal = ({ project, onClose }) => {
   return (

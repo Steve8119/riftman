@@ -22,6 +22,7 @@ const Home = () => {
 
   return (
     <div className="home-container" style={{ backgroundImage: `url(${currentImage})` }}>
+      <div className="image-overlay"></div>
       <div className="welcome">
         <h1 className="home-text">Welcome to Riftworkmanship Limited</h1>
         <p className="home-description">

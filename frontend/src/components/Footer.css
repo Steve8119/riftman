@@ -1,49 +1,83 @@
-/* Footer.css */
-
 .footer {
-  background-color: #343a40;
+  background-color: #333;
   color: #fff;
-  padding: 50px 0;
+  padding: 40px 0;
 }
 
-.footer h5 {
-  font-size: 24px;
-  font-weight: bold;
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer .col-md-4 {
+  flex: 1;
+  min-width: 250px;
   margin-bottom: 20px;
 }
 
+.footer h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #f8f8f8;
+  
+}
+
 .footer p {
-  font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .footer ul {
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
 
 .footer ul li {
   margin-bottom: 10px;
 }
 
+.footer ul li i {
+  margin-right: 10px;
+}
+
 .footer ul li a {
-  color: #fff;
+  color: #aaa;
   text-decoration: none;
-  font-size: 16px;
+  transition: color 0.3s;
 }
 
 .footer ul li a:hover {
-  color: #ffc107; /* Change hover color */
-}
-
-.footer ul li i {
-  margin-right: 10px;
-  font-size: 20px;
+  color: #fff;
 }
 
 .footer-bottom {
   background-color: #222;
-  color: #ccc;
   padding: 20px 0;
-  font-size: 14px;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .footer .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .col-md-4 {
+    max-width: 100%;
+    text-align: center;
+  }
 }

@@ -57,7 +57,7 @@ const Navbar = () => {
               <a className="nav-link" href="#contacts">Contacts</a>
             </li>
             <li className="nav-item">
-              <button className="nav-link btn btn-primary text-white" onClick={handleModalOpen}>
+              <button className="nav-link btn btn-primary text-white btn-online-booking" onClick={handleModalOpen}>
                 Online Booking
               </button> {/* Add the booking link */}
             </li>

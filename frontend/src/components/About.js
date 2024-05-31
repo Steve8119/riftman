@@ -1,62 +1,59 @@
-import React from "react";
-import './About.css';
+import React from 'react';
+import './About.css'; // Assume you have some styles in About.css
+
+import m1 from '../components/images/m.jpg';
+import m2 from '../components/images/m2.jpg';
+import m3 from '../components/images/m3.jpg';
 
 const About = () => {
-  return (
-    <div className="about-container">
-      <div className="about-header">
-        <h1>About Us</h1>
-        <p>We are a team of experienced construction professionals dedicated to delivering high-quality projects on time and within budget. Our mission is to provide exceptional service and craftsmanship to every client.</p>
-      </div>
-      <div className="about-details">
-        <h2>Our Mission</h2>
-        <p>At our company, we are committed to excellence in everything we do. Our mission is to provide top-quality construction services while maintaining the highest levels of professionalism, integrity, honesty, and fairness in our relationships with our clients, subcontractors, suppliers, and partners.</p>
-        <h2>Our Vision</h2>
-        <p>Our vision is to be the construction company of choice in our area, known for our dedication to quality, innovation, and customer satisfaction. We aim to exceed our clients' expectations and build lasting relationships based on trust and mutual respect.</p>
-        <h2>Our Values</h2>
-        <div className="table-container">
-  <table className="table">
-    <thead>
-      <tr>
-        <th>Aspect</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>Quality:</strong></td>
-        <td>We are committed to delivering exceptional quality in every project we undertake.</td>
-      </tr>
-      <tr>
-        <td><strong>Integrity:</strong></td>
-        <td>We conduct business with honesty, transparency, and accountability.</td>
-      </tr>
-      <tr>
-        <td><strong>Teamwork:</strong></td>
-        <td>We foster a collaborative environment where teamwork and cooperation are valued.</td>
-      </tr>
-      <tr>
-        <td><strong>Innovation:</strong></td>
-        <td>We embrace innovation and continuously seek new ways to improve and excel.</td>
-      </tr>
-      <tr>
-        <td><strong>Customer Satisfaction:</strong></td>
-        <td>We prioritize customer satisfaction and strive to exceed our clients' expectations.</td>
-      </tr>
-      <tr>
-        <td><strong>Community Engagement:</strong></td>
-        <td>We are actively involved in our community and support local initiatives and organizations.</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-
-        <h2>Our Team</h2>
-        <p>Our team consists of skilled professionals with extensive experience in various aspects of construction, including project management, design, engineering, and craftsmanship. We are dedicated to working together to deliver outstanding results and ensure the success of every project.</p>
-      </div>
-    </div>
-  );
+    return (
+        <div className="about-container">
+            <h1>About Us</h1>
+            <p className="company-description">
+                Welcome to our place for construction professionals. At our company, we don’t just plan; we build according to a great plan. With our great teamwork and exceptional skills, we make your every dream real. We give life to any blueprint!
+            </p>
+            <div className="mission-vision-container">
+                <div className="mission">
+                    <h2>Our Mission</h2>
+                    <p>
+                        Our mission is to transform dreams into reality through meticulous planning, innovative solutions, and unmatched construction expertise. We aim to be the trusted partner for all construction needs, delivering projects that enhance communities and improve lives.
+                    </p>
+                </div>
+                <div className="vision">
+                    <h2>Our Vision</h2>
+                    <p>
+                        Our vision is to be the leading construction company in the region, known for our innovation, professionalism, and exceptional service. We strive to exceed expectations on every project, big or small, and to create strong, lasting relationships with our clients and partners.
+                    </p>
+                </div>
+            </div>
+            <div className="team">
+                <h2>Our Team</h2>
+                <div className="team-images">
+                    <div className="team-member">
+                        <img src={m1} alt="Team Member 1" className="team-image" />
+                        <div className="member-info">
+                            <h3>Title</h3>
+                            <p>Name</p>
+                        </div>
+                    </div>
+                    <div className="team-member">
+                        <img src={m2} alt="Team Member 2" className="team-image" />
+                        <div className="member-info">
+                            <h3>Title</h3>
+                            <p>Name</p>
+                        </div>
+                    </div>
+                    <div className="team-member">
+                        <img src={m3} alt="Team Member 3" className="team-image" />
+                        <div className="member-info">
+                            <h3>Title</h3>
+                            <p>Name</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
 };
 
 export default About;

@@ -25,11 +25,11 @@ const Footer = () => {
           <div className="col-md-4">
             <h5>Contact Information</h5>
             <ul className="list-unstyled">
-              <li><i className="fas fa-map-marker-alt"></i> 123 Main St, Anytown USA</li>
-              <li><i className="fas fa-phone"></i> (123) 456-7890</li>
-              <li><i className="fas fa-envelope"></i> info@mywebsite.com</li>
-              <li><i className="fab fa-twitter"></i> @mywebsite</li>
-              <li><i className="fab fa-facebook-f"></i> facebook.com/mywebsite</li>
+              <li><i className="fas fa-map-marker-alt"></i> Construction company, Eldoret, Kenya</li>
+              <li><i className="fas fa-phone"></i> 0704 694052</li>
+              <li><i className="fas fa-envelope"></i> riftworkmanship77@gmail.com</li>
+              <li><i className="fab fa-twitter"></i> <a href="https://twitter.com/mywebsite">@mywebsite</a></li>
+              <li><i className="fab fa-facebook-f"></i> <a href="https://facebook.com/mywebsite">facebook.com/mywebsite</a></li>
             </ul>
           </div>
         </div>

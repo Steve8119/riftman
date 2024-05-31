@@ -78,23 +78,7 @@ const Services = () => {
             </div>
           </div>
           
-          <div className="col-md-4">
-            <div className="card h-100">
-              <div className="card-body">
-                <h4 className="card-title">1099 Workers</h4>
-                <p className="card-text">{serviceDescriptions["1099 Workers"]}</p>
-              </div>
-            </div>
-          </div>
-          {/* Service 8: Opulence Designs */}
-          <div className="col-md-4">
-            <div className="card h-100">
-              <div className="card-body">
-                <h4 className="card-title">Opulence Designs</h4>
-                <p className="card-text">{serviceDescriptions["Opulence Designs"]}</p>
-              </div>
-            </div>
-          </div>
+         
           {/* Add more services here */}
         </div>
       </div>

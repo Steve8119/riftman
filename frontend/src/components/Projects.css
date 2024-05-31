@@ -1,90 +1,172 @@
-/* Projects.css */
-
 .projects-container {
-  text-align: center;
+  max-width: 1600px;
+ 
   padding: 20px;
-  background-color: antiquewhite;
-}
+  background-color: #0056b3;
+ 
 
+}
+.hi {
+  color: #f9f9f9;
+}
 .title {
-  text-align: start;
-  font-size: medium;
-  margin-top: 0%;
-  margin-bottom: 3%;
+  text-align: center;
+  color: #3f8cdf;
+  margin-bottom: 20px;
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Automatically adjust columns based on available width */
-  gap: 20px;
+.projects-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.projects-row:hover {
+  transform: scale(1.02);
 }
 
 .project {
   position: relative;
+  margin-left: 5px; /* Adjusted margin-left to bring images closer to the left */
+  margin-right: 5px; /* Adjusted margin-right to bring images closer to the right */
+  width: calc(24% - 10px); /* Adjusted width to 22.5% */
+  height: 300px; /* Allow the height to adjust based on the image aspect ratio */
+  margin-bottom: 20px;
+  border-radius: 8px;
   overflow: hidden;
-  height: 300px; /* Adjust the height as needed */
+  transition: transform 0.3s;
 }
 
 .project img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Maintain aspect ratio */
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+  width: 120%; /* Increased width to 120% */
+  height: 120%; /* Increased height to 120% */
+  object-fit: cover;
+  border-radius: 4px;
+  border: 4px solid yellow;
 }
 
-.project:hover img {
-  transform: scale(1.1);
-}
 
 .hover-box {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  color: #fff;
-  opacity: 0.8;
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  box-sizing: border-box;
-  transition: opacity 0.3s ease;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px; /* Reduced padding */
+  text-align: center;
+  transition: all 0.3s ease;
+  opacity: 0;
+  max-width: 80%; /* Added max-width to limit the width of the description */
 }
 
 .project:hover .hover-box {
   opacity: 1;
 }
 
+.hover-box p {
+  margin: 0; /* Removed margin */
+  font-size: 14px; /* Adjusted font size */
+  max-height: 40px; /* Added max-height to limit the height of the description */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Added text-overflow to show ellipsis for overflowed text */
+  white-space: nowrap; /* Added white-space to prevent wrapping */
+}
+
+
+
+/* .hover-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 20px;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.project:hover .hover-box {
+  opacity: 1;
+  transform: translateY(0);
+} */
+
 .hover-box h2 {
-  font-size: 1.5rem;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
 .hover-box p {
-  font-size: 1rem;
-  margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hover-box button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  text-align: center;
+  display: inline-block;
+}
+
+.hover-box button:hover {
+  background-color: #003d80;
+  transform: scale(1.05);
 }
 
 .see-more-btn {
-  margin-top: 20px; /* Adjust spacing */
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #0056b3;
+  color: white;
   border: none;
+  padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-bottom: 3%;
 }
 
 .see-more-btn:hover {
-  background-color: #0056b3;
+  background-color: #003d80;
+  transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column size for smaller screens */
-  }
+.arrow-down {
+  text-align: center;
+  margin-top: 20px;
+}
 
+.arrow-down svg {
+  width: 30px;
+  height: 30px;
+  fill: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
   .project {
-    height: 250px; /* Adjust project height for smaller screens */
+    width: calc(50% - 10px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .project {
+    width: 100%;
   }
 }
