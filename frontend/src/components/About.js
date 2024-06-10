@@ -7,7 +7,7 @@ import m3 from '../components/images/m3.jpg';
 const About = () => {
     return (
         <div className="about-container">
-            <h1 style={{ color: 'black' }}>About Us</h1>
+            <h1 style={{ color: 'white' }}>About Us</h1>
             <p className="company-description">
                 Welcome to our place for construction professionals. At our company, we don’t just plan; we build according to a great plan. With our great teamwork and exceptional skills, we make your every dream real. We give life to any blueprint!
             </p>

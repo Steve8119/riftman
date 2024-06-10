@@ -75,7 +75,7 @@ const Projects = () => {
 
   return (
     <div>
-      <h1 className="projects-title">Done Projects of the Company</h1>
+      <h1 className="projects-title">Done Projects</h1>
       <div className="projects-gallery">
         {projects.slice(0, visibleProjects).map((project, index) => (
           <div key={index} className="projects-item">
