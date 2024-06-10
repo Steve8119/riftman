@@ -1,6 +1,5 @@
 import React from 'react';
-import './About.css'; // Assume you have some styles in About.css
-
+import './About.css';
 import m1 from '../components/images/m.jpg';
 import m2 from '../components/images/m2.jpg';
 import m3 from '../components/images/m3.jpg';
@@ -8,7 +7,7 @@ import m3 from '../components/images/m3.jpg';
 const About = () => {
     return (
         <div className="about-container">
-            <h1>About Us</h1>
+            <h1 style={{ color: 'black' }}>About Us</h1>
             <p className="company-description">
                 Welcome to our place for construction professionals. At our company, we don’t just plan; we build according to a great plan. With our great teamwork and exceptional skills, we make your every dream real. We give life to any blueprint!
             </p>
@@ -27,27 +26,27 @@ const About = () => {
                 </div>
             </div>
             <div className="team">
-                <h2>Our Team</h2>
+                <h2 style={{ color: 'black' }}>Our Team</h2>
                 <div className="team-images">
                     <div className="team-member">
                         <img src={m1} alt="Team Member 1" className="team-image" />
                         <div className="member-info">
-                            <h3>Title</h3>
-                            <p>Name</p>
+                            <h3 style={{ color: 'white' }}>Title</h3>
+                            <p style={{ color: 'white' }}>Name</p>
                         </div>
                     </div>
                     <div className="team-member">
                         <img src={m2} alt="Team Member 2" className="team-image" />
                         <div className="member-info">
-                            <h3>Title</h3>
-                            <p>Name</p>
+                            <h3 style={{ color: 'white' }}>Title</h3>
+                            <p style={{ color: 'white' }}>Name</p>
                         </div>
                     </div>
                     <div className="team-member">
                         <img src={m3} alt="Team Member 3" className="team-image" />
                         <div className="member-info">
-                            <h3>Title</h3>
-                            <p>Name</p>
+                            <h3 style={{ color: 'white' }}>Title</h3>
+                            <p style={{ color: 'black' }}>Name</p>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,3 @@
-/* Home.css */
-
 /* Reset */
 body {
   margin: 0;
@@ -13,35 +11,62 @@ body {
   background-position: center;
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* Align items to start from the top */
   text-align: center;
   color: #fff;
+  position: relative;
+  flex-direction: column;
+  padding-top: 50px; /* Add padding at the top */
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
 }
 
 /* Welcome Section Styles */
 .welcome {
-  max-width: 800px;
+  max-width: 90%;
   padding: 20px;
-  background-color: rgba(95, 87, 87, 0.5);
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
   border-radius: 10px;
-  border: 4px solid black; /* Adding black border with 4px thickness */
-  position: center; /* Position fixed to remain at the bottom */
-  bottom: 20px; /* Adjust the distance from the bottom as needed */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center horizontally */
-  animation: slideIn 1s ease forwards; /* Apply animation */
+  z-index: 2;
+  animation: fadeIn 2s ease-in-out forwards;
+  border: 2px solid #fff; /* White border for better contrast */
+  text-align: center;
+  color: #fff; /* Ensure the text is white for better contrast */
+  margin: 20px auto; /* Center the container and add some margin */
+  position: relative; /* Ensure proper layering */
+  top: 50px; /* Move downward */
 }
 
-@keyframes slideIn {
+.welcome1 {
+  max-width: 90%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  border-radius: 10px;
+  z-index: 2;
+  animation: fadeIn 2s ease-in-out forwards;
+  border: 2px solid #fff; /* White border for better contrast */
+  text-align: center;
+  color: #fff; /* Ensure the text is white for better contrast */
+  margin: 20px auto; /* Center the container and add some margin */
+  position: relative; /* Ensure proper layering */
+  top: 70px; /* Move downward */
+}
+
+@keyframes fadeIn {
   from {
-    transform: translateY(100%); /* Start animation from below */
-    opacity: 0; /* Start with opacity 0 */
+    opacity: 0;
   }
   to {
-    transform: translateY(0); /* End animation at its position */
-    opacity: 1; /* End with full opacity */
+    opacity: 1;
   }
 }
 
@@ -49,22 +74,18 @@ body {
 .home-text {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: #fff; /* Ensure the text is white for better contrast */
 }
 
 /* Description Styles */
 .home-description {
   font-size: 1.2rem;
   margin-top: 0;
+  color: #fff; /* Ensure the text is white for better contrast */
 }
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
-  .home-container {
-    background-size: contain;
-  }
-}
-
-@media (max-width: 576px) {
   .home-text {
     font-size: 2rem;
   }
@@ -74,23 +95,63 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .welcome, .welcome1 {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .home-text {
+    font-size: 1.5rem;
+  }
+
+  .home-description {
+    font-size: 0.9rem;
+  }
+
+  .welcome {
+    top: 40px; /* Adjust for smaller screens */
+  }
+
+  .welcome1 {
+    top: 60px; /* Adjust for smaller screens */
+  }
+}
+
+/* Downward Arrow Styles */
 /* Downward Arrow Styles */
 .arrow-down {
   position: absolute;
   bottom: 20px;
-  width: 500px; /* Adjust the width of the arrow */
-  height: 50px; /* Adjust the height of the arrow */
+  width: 250px; /* Increase the width of the arrow */
+  height: 150px; /* Increase the height of the arrow */
   left: 50%;
   transform: translateX(-50%);
   animation: floatArrow 2s infinite ease-in-out;
-  z-index: 999; /* Ensure it appears above other content */
+  z-index: 2;
+  cursor: pointer;
 }
 
 .arrow-down svg {
-  width: 100%; /* Make the SVG width responsive */
-  height: 100%; /* Make the SVG height responsive */
-  fill: yellow; /* Change the color to yellow */
-  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  fill: #fff; /* White color for better contrast */
+}
+
+@keyframes floatArrow {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
+}
+
+
+.arrow-down svg {
+  width: 100%;
+  height: 100%;
+  fill: #fff; /* White color for better contrast */
 }
 
 @keyframes floatArrow {

@@ -16,70 +16,20 @@ const Services = () => {
   };
 
   return (
-
-    <div id="services" style={{ padding: '80px 0' }}>
-      <div className='title'><h2>Our Services</h2></div>
-          
-    <div className="container">
-
-      <div className="row">
-        
-          <div className="col-md-4">
-            <div className="card h-100">
-              <div className="card-body">
-                <h4 className="card-title">Architectural & Structural Drawings</h4>
-                <p className="card-text">{serviceDescriptions["Architectural & Structural Drawings"]}</p>
+    <div id="services" className="services-container">
+      <div className="title"><h2>Our Services</h2></div>
+      <div className="container">
+        <div className="row">
+          {Object.keys(serviceDescriptions).map((serviceName, index) => (
+            <div key={index} className="col-md-3">
+              <div className="card h-100">
+                <div className="card-body">
+                  <h4 className="card-title">{serviceName}</h4>
+                  <p className="card-text">{serviceDescriptions[serviceName]}</p>
+                </div>
               </div>
             </div>
-          </div>
-       
-          <div className="col-md-4">
-            <div className="card h-100">
-              <div className="card-body">
-                <h4 className="card-title">Bill of Quantities</h4>
-                <p className="card-text">{serviceDescriptions["Bill of Quantities"]}</p>
-              </div>
-            </div>
-          </div>
-       
-          <div className="col-md-4">
-            <div className="card h-100">
-              <div className="card-body">
-                <h4 className="card-title">Approvals Facilitation</h4>
-                <p className="card-text">{serviceDescriptions["Approvals Facilitation"]}</p>
-              </div>
-            </div>
-          </div>
-    
-          <div className="col-md-4">
-            <div className="card h-100">
-              <div className="card-body">
-                <h4 className="card-title">Interior Design</h4>
-                <p className="card-text">{serviceDescriptions["Interior Design"]}</p>
-              </div>
-            </div>
-          </div>
-   
-          <div className="col-md-4">
-            <div className="card h-100">
-              <div className="card-body">
-                <h4 className="card-title">Design and Build Services</h4>
-                <p className="card-text">{serviceDescriptions["Design and Build Services"]}</p>
-              </div>
-            </div>
-          </div>
-  
-          <div className="col-md-4">
-            <div className="card h-100">
-              <div className="card-body">
-                <h4 className="card-title">Renovation Works</h4>
-                <p className="card-text">{serviceDescriptions["Renovation Works"]}</p>
-              </div>
-            </div>
-          </div>
-          
-         
-          {/* Add more services here */}
+          ))}
         </div>
       </div>
     </div>

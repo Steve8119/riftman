@@ -1,6 +1,6 @@
 .footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #FFD700; /* Changed to company color */
+  color: #333; /* Changed text color for better contrast */
   padding: 40px 0;
 }
 
@@ -25,8 +25,6 @@
 .footer h5 {
   font-size: 18px;
   margin-bottom: 15px;
-  color: #f8f8f8;
-  
 }
 
 .footer p {
@@ -47,13 +45,13 @@
 }
 
 .footer ul li a {
-  color: #aaa;
+  color: #333; /* Changed link color */
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .footer ul li a:hover {
-  color: #fff;
+  color: #000; /* Darken link color on hover */
 }
 
 .footer-bottom {

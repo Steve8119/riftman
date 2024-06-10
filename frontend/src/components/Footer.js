@@ -1,5 +1,8 @@
 import React from 'react';
 import './Footer.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter, faFacebookF } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
@@ -25,17 +28,17 @@ const Footer = () => {
           <div className="col-md-4">
             <h5>Contact Information</h5>
             <ul className="list-unstyled">
-              <li><i className="fas fa-map-marker-alt"></i> Construction company, Eldoret, Kenya</li>
-              <li><i className="fas fa-phone"></i> 0704 694052</li>
-              <li><i className="fas fa-envelope"></i> riftworkmanship77@gmail.com</li>
-              <li><i className="fab fa-twitter"></i> <a href="https://twitter.com/mywebsite">@mywebsite</a></li>
-              <li><i className="fab fa-facebook-f"></i> <a href="https://facebook.com/mywebsite">facebook.com/mywebsite</a></li>
+              <li><FontAwesomeIcon icon={faMapMarkerAlt} /> Construction company, Eldoret, Kenya</li>
+              <li><FontAwesomeIcon icon={faPhone} /> 0704 694052</li>
+              <li><FontAwesomeIcon icon={faEnvelope} /> riftworkmanship77@gmail.com</li>
+              <li><FontAwesomeIcon icon={faTwitter} /> <a href="https://twitter.com/mywebsite">Riftworkmanship</a></li>
+              <li><FontAwesomeIcon icon={faFacebookF} /> <a href="https://facebook.com/mywebsite">Riftworkmanship</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div className="footer-bottom text-center">
-        <p>&copy; {new Date().getFullYear()} My Website. All Rights Reserved.</p>
+        <p>&copy; {new Date().getFullYear()} pyxelz graphic design. All Rights Reserved.</p>
       </div>
     </footer>
   );

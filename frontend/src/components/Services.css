@@ -3,6 +3,11 @@
 #services {
   padding: 80px 0;
   background-color: #f9f9f9; /* Background color for the services section */
+  text-align: center;
+}
+
+.title h2 {
+  margin-bottom: 40px;
 }
 
 .container {
@@ -13,12 +18,12 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center; /* Center the service cards */
 }
 
-.col-md-4 {
-  flex: 0 0 calc(33.333% - 20px);
-  margin-bottom: 40px; /* Increase margin between service cards */
+.col-md-3 {
+  flex: 0 0 calc(25% - 20px); /* Four cards per row */
+  margin-bottom: 40px;
 }
 
 .card {
@@ -26,11 +31,11 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
   transition: transform 0.3s, box-shadow 0.3s;
-  height: 100%; /* Set fixed height */
+  height: 100%; /* Ensure cards have the same height */
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5%);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -50,14 +55,70 @@
   line-height: 1.6; /* Increase line height for better readability */
 }
 
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .col-md-3 {
+    flex: 0 0 calc(33.333% - 20px); /* Three cards per row on large screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .col-md-3 {
+    flex: 0 0 calc(50% - 20px); /* Two cards per row on medium screens */
+  }
+}
+
 @media (max-width: 768px) {
-  .col-md-4 {
-    flex: 0 0 calc(50% - 20px);
+  .col-md-3 {
+    flex: 0 0 calc(50% - 20px); /* Two cards per row on small screens */
+  }
+
+  .card-body {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .card-title {
+    font-size: 1.5rem; /* Reduce font size for smaller screens */
+  }
+
+  .card-text {
+    font-size: 1rem; /* Reduce font size for smaller screens */
   }
 }
 
 @media (max-width: 576px) {
-  .col-md-4 {
-    flex: 0 0 100%;
+  .col-md-3 {
+    flex: 0 0 calc(50% - 20px); /* Two cards per row on extra small screens */
+  }
+
+  .card-body {
+    padding: 15px; /* Further adjust padding for very small screens */
+  }
+
+  .card-title {
+    font-size: 1.2rem; /* Further reduce font size */
+  }
+
+  .card-text {
+    font-size: 0.9rem; /* Further reduce font size */
+  }
+
+  .card:hover {
+    transform: translateY(0); /* Remove the translate effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust box shadow */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-body {
+    padding: 10px; /* Further adjust padding for very small screens */
+  }
+
+  .card-title {
+    font-size: 1rem; /* Further reduce font size */
+  }
+
+  .card-text {
+    font-size: 0.8rem; /* Further reduce font size */
   }
 }

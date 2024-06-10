@@ -6,10 +6,6 @@
   color: #333;
 }
 
-.body {
-  font-family: 'Roboto', sans-serif;
-}
-
 h1 {
   font-size: 2em;
   text-align: center;
@@ -21,8 +17,8 @@ h1 {
   margin: 20px auto;
   width: 80%;
   max-width: 800px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: #5c5b55;
+  border: 1px solid #333;
   border-radius: 10px;
   transition: box-shadow 0.3s ease-in-out;
   font-size: 1.1em;
@@ -34,29 +30,39 @@ h1 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-
-
-/* .mission-vision-container {
+.mission-vision-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
-} */
-
-/* .mission, .vision {
-  background: #f9f9f9;
-  padding: 50px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #a09e95;
   border-radius: 8px;
-  width: 48%;
-  margin-top: 3cm;
-} */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-/* .mission h2, .vision h2 {
-  color: #0056b3;
-} */
-/* 
-.mission p, .vision p {
-  margin: 10px 0;
-} */
+.mission,
+.vision {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mission h2,
+.vision h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.mission p,
+.vision p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
 
 .team {
   text-align: center;
@@ -64,7 +70,7 @@ h1 {
 }
 
 .team h2 {
-  color: #0056b3;
+  color: #555450;
   margin-bottom: 20px;
 }
 
@@ -86,38 +92,14 @@ h1 {
   border-radius: 8px;
   margin-bottom: 10px;
 }
-.mission-vision-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.mission, .vision {
-  flex: 1;
-  margin: 10px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.mission h2, .vision h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.mission p, .vision p {
-  font-size: 16px;
-  color: #666;
-  line-height: 1.6;
-}
 
 @media (max-width: 768px) {
+  .company-description {
+      width: 100%;
+      padding: 10px;
+      margin: 10px auto;
+  }
+
   .mission-vision-container {
       flex-direction: column;
   }

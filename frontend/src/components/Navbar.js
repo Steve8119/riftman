@@ -19,6 +19,10 @@ const Navbar = () => {
     setIsNavCollapsed(!isNavCollapsed);
   };
 
+  const handleNavLinkClick = () => {
+    setIsNavCollapsed(true); // Collapse the navbar when a link is clicked
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
@@ -27,34 +31,34 @@ const Navbar = () => {
           Riftworkmanship Limited
         </a>
         <button
-          className="navbar-toggler"
+          className={`navbar-toggler d-lg-none`} // Hide the toggler on large screens
           type="button"
           onClick={handleNavCollapse}
           aria-controls="navbarNav"
           aria-expanded={!isNavCollapsed}
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon">&#9776;</span>
         </button>
-        <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarNav">
+        <div className={`navbar-collapse ${isNavCollapsed ? 'collapse' : 'show'}`} id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#home">Home</a>
+              <button className="nav-link btn-transparent" onClick={handleNavLinkClick}>Home</button>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#about">About</a>
+              <button className="nav-link btn-transparent" onClick={handleNavLinkClick}>About</button>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#services">Services</a>
+              <button className="nav-link btn-transparent" onClick={handleNavLinkClick}>Services</button>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#projects">Projects</a>
+              <button className="nav-link btn-transparent" onClick={handleNavLinkClick}>Projects</button>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#testimonials">Testimonials</a>
+              <button className="nav-link btn-transparent" onClick={handleNavLinkClick}>Testimonials</button>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contacts">Contacts</a>
+              <button className="nav-link btn-transparent" onClick={handleNavLinkClick}>Contacts</button>
             </li>
             <li className="nav-item">
               <button className="nav-link btn btn-primary text-white btn-online-booking" onClick={handleModalOpen}>

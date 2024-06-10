@@ -12,10 +12,14 @@ const Home = () => {
     const images = [background1, background2, background3];
     let index = 0;
 
-    const interval = setInterval(() => {
+    const changeImage = () => {
       index = (index + 1) % images.length;
       setCurrentImage(images[index]);
-    }, 5000);
+    };
+
+    // Change image immediately when the component mounts
+    changeImage();
+    const interval = setInterval(changeImage, 5000);
 
     return () => clearInterval(interval);
   }, []);
@@ -28,11 +32,14 @@ const Home = () => {
         <p className="home-description">
           Place for construction professionals. We don't just plan; we build
           according to a great plan. We have the skills to make your every dream
-          real with our great teamwork. #GIVE LIVE TO ANY BLUEPRINT.
+          real with our great teamwork. #GIVE LIFE TO ANY BLUEPRINT.
         </p>
       </div>
+      <div className="welcome1">
+        <h2>Additional Content Here</h2>
+        <p>This is another section that can be used for various purposes.</p>
+      </div>
       <WhatsAppIcon /> {/* Include WhatsAppIcon component */}
-      {/* Downward arrow */}
       <div className="arrow-down">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path d="M7 10l5 5 5-5z" />
