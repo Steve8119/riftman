@@ -19,6 +19,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Center the service cards */
+  gap: 20px; /* Add gap between the cards */
 }
 
 .col-md-3 {
@@ -32,6 +33,8 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
   transition: transform 0.3s, box-shadow 0.3s;
   height: 100%; /* Ensure cards have the same height */
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
@@ -41,6 +44,9 @@
 
 .card-body {
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .card-title {
@@ -53,6 +59,21 @@
   font-size: 1.2rem; /* Increase text font size */
   color: #666;
   line-height: 1.6; /* Increase line height for better readability */
+  flex-grow: 1;
+}
+
+.read-more-button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.read-more-button:hover {
+  background-color: #555;
 }
 
 /* Responsive Design */
@@ -88,7 +109,7 @@
 
 @media (max-width: 576px) {
   .col-md-3 {
-    flex: 0 0 calc(50% - 20px); /* Two cards per row on extra small screens */
+    flex: 0 0 calc(100% - 20px); /* One card per row on extra small screens */
   }
 
   .card-body {
