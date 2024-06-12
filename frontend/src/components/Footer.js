@@ -30,7 +30,7 @@ const Footer = () => {
             <h5>Contact Information</h5>
             <ul className="list-unstyled">
               <li><FontAwesomeIcon icon={faMapMarkerAlt} /> Construction company, Eldoret, Kenya</li>
-              <li><FontAwesomeIcon icon={faPhone} /> 0704 694052</li>
+              <li><FontAwesomeIcon icon={faPhone} /> 0704op 694052</li>
               <li><FontAwesomeIcon icon={faEnvelope} /> riftworkmanship77@gmail.com</li>
               <li><FontAwesomeIcon icon={faTwitter} /> <a href="https://twitter.com/mywebsite">Riftworkmanship</a></li>
               <li><FontAwesomeIcon icon={faFacebookF} /> <a href="https://facebook.com/mywebsite">Riftworkmanship</a></li>
