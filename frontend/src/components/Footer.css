@@ -2,6 +2,7 @@
   background-color: #FFD700; /* Changed to company color */
   color: #333; /* Changed text color for better contrast */
   padding: 20px 0; /* Reduce padding for smaller screens */
+  margin: 0;
 }
 
 .footer .container {

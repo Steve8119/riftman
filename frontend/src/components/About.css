@@ -2,8 +2,8 @@
 /* About.css */
 .about-container {
   max-width: 1200px;
-  margin: 100px auto 20px; /* Adjust margin to give space at the top */
-  padding: 20px;
+  margin: 0; /* Adjust margin to give space at the top */
+  padding: 0px;
   font-family: Arial, sans-serif;
   color: #333;
   background-color: rgba(0, 0, 0, 0.8); /* Darkish background color */
