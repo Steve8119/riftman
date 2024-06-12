@@ -60,7 +60,6 @@
   padding: 10px 0; /* Reduce padding for smaller screens */
   margin-top: 20px;
   color: #d3c5c5;
-  
 }
 
 .footer-bottom p {
@@ -82,7 +81,6 @@
     text-align: center;
   }
 }
-
 
 /* General styles for the paragraph */
 .responsive-paragraph {
@@ -111,14 +109,16 @@
     width: 90%;
     padding: 15px;
     font-size: 1em;
+    margin: 10px auto; /* Adjust margin for better spacing on smaller screens */
   }
 }
 
 /* Responsive adjustments for mobile devices */
 @media (max-width: 576px) {
   .responsive-paragraph {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     font-size: 0.9em;
+    margin: 5px auto; /* Adjust margin for better spacing on smaller screens */
   }
 }
