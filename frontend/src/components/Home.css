@@ -84,14 +84,32 @@ body {
   color: #fff; /* Ensure the text is white for better contrast */
 }
 
+/* WhatsApp Icon Styles */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999; /* Ensure it appears above other content */
+}
+
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
+  .home-container {
+    height: 80vh; /* Adjust height for smaller screens */
+  }
+
   .home-text {
     font-size: 2rem;
   }
 
   .home-description {
     font-size: 1rem;
+  }
+  
+  /* Adjust WhatsApp Icon position */
+  .whatsapp-icon {
+    bottom: 10px;
+    right: 10px;
   }
 }
 
@@ -116,9 +134,18 @@ body {
   .welcome1 {
     top: 60px; /* Adjust for smaller screens */
   }
+
+  .home-container {
+    height: 70vh; /* Further adjust height for even smaller screens */
+  }
+  
+  /* Adjust WhatsApp Icon position */
+  .whatsapp-icon {
+    bottom: 5px;
+    right: 5px;
+  }
 }
 
-/* Downward Arrow Styles */
 /* Downward Arrow Styles */
 .arrow-down {
   position: absolute;
@@ -130,18 +157,6 @@ body {
   animation: floatArrow 2s infinite ease-in-out;
   z-index: 2;
   cursor: pointer;
-}
-
-/* CSS */
-.arrow-down {
-  position: absolute;
-  bottom: 20px;
-  width: 50px; /* Set initial width */
-  height: 50px; /* Set initial height */
-  left: 50%;
-  transform: translateX(-50%);
-  animation: floatArrow 2s infinite ease-in-out;
-  z-index: 999; /* Ensure it appears above other content */
 }
 
 .arrow-down svg {

@@ -1,6 +1,9 @@
 /* Navbar general styles */
 .navbar {
   padding: 1rem; /* Increase padding for larger navbar */
+  border: none; /* Remove any border */
+  box-shadow: none; /* Remove any shadow */
+  background-color: transparent; /* Ensure background is transparent */
 }
 
 .navbar-nav {
@@ -22,6 +25,13 @@
   font-size: 1rem; /* Default font size */
   text-decoration: none; /* Remove underline from links */
   color: #333; /* Default link color */
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+}
+
+.nav-link:hover {
+  color: #007bff; /* Add hover color for better UX */
 }
 
 .nav-link.btn {
@@ -54,12 +64,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000; /* Ensure it is above all other content */
 }
 
 .modal-content {
-  background-color: rgb(188, 199, 42);
+  background-color: #fff;
   padding: 20px;
   border-radius: 5px;
+  width: 80%;
+  max-width: 400px; /* Set a max width for the modal */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
   position: relative;
 }
 
@@ -69,6 +83,7 @@
   right: 10px;
   font-size: 20px;
   cursor: pointer;
+  color: #333;
 }
 
 .container {
