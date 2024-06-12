@@ -1,10 +1,12 @@
 /* About.css */
 .about-container {
   max-width: 1200px;
+  border-radius: 10px;
   margin: 0 auto; /* Center the container */
-  padding: 0;
+  padding: 20px;
   font-family: Arial, sans-serif;
   color: #333;
+  margin-top: 10%;
   background-color: rgba(0, 0, 0, 0.8); /* Darkish background color */
 }
 
@@ -12,12 +14,15 @@ h1 {
   font-size: 2em;
   text-align: center;
   margin-bottom: 20px;
+  
 }
 
 .company-description {
   padding: 20px;
+ 
   margin: 20px auto;
-  width: 40%;
+  margin-top: 100%;
+  width: 80%;
   max-width: 200px;
   background-color: #f0eee7;
   border: 1px solid #bebbbb;
@@ -115,4 +120,8 @@ h1 {
       margin: 10px auto;
       font-size: 0.9em;
   }
+}
+.about-container h1 {
+  margin-top: 0; /* Ensure no extra space at the top */
+  margin-bottom: 20px; /* Increase space between the heading and the paragraph */
 }

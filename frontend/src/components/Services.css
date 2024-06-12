@@ -4,12 +4,14 @@
   padding: 80px 0;
   background-color: #f9f9f9; /* Background color for the services section */
   text-align: center;
+  margin-top: -10%;
+  margin-bottom: -10%;
 }
 
 .title h2 {
   margin-bottom: 30px;
-  margin-top: -60px;
-  font-size: 2.5rem; /* Default font size for large screens */
+  margin-top: -10px;
+  font-size: 6rem; /* Default font size for large screens */
   transition: font-size 0.3s, margin 0.3s;
 }
 
@@ -86,7 +88,7 @@
   }
 
   .title h2 {
-    font-size: 2.2rem; /* Adjust font size for large screens */
+    font-size: 5rem; /* Adjust font size for large screens */
     margin-top: -45px; /* Adjust top margin for large screens */
     margin-bottom: 25px; /* Adjust bottom margin for large screens */
   }
@@ -98,7 +100,7 @@
   }
 
   .title h2 {
-    font-size: 2rem; /* Adjust font size for medium screens */
+    font-size: 4rem; /* Adjust font size for medium screens */
     margin-top: -40px; /* Adjust top margin for medium screens */
     margin-bottom: 20px; /* Adjust bottom margin for medium screens */
   }
@@ -122,7 +124,7 @@
   }
 
   .title h2 {
-    font-size: 1.8rem; /* Adjust font size for small screens */
+    font-size: 3.8rem; /* Adjust font size for small screens */
     margin-top: -30px; /* Adjust top margin for small screens */
     margin-bottom: 20px; /* Adjust bottom margin for small screens */
   }
@@ -151,7 +153,7 @@
   }
 
   .title h2 {
-    font-size: 1.5rem; /* Adjust font size for extra small screens */
+    font-size: 3rem; /* Adjust font size for extra small screens */
     margin-top: -20px; /* Adjust top margin for extra small screens */
     margin-bottom: 15px; /* Adjust bottom margin for extra small screens */
   }
@@ -171,7 +173,7 @@
   }
 
   .title h2 {
-    font-size: 1.2rem; /* Adjust font size for very small screens */
+    font-size: 2.8rem; /* Adjust font size for very small screens */
     margin-top: -15px; /* Adjust top margin for very small screens */
     margin-bottom: 10px; /* Adjust bottom margin for very small screens */
   }

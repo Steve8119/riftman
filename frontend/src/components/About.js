@@ -26,7 +26,7 @@ const About = () => {
                 </div>
             </div>
             <div className="team">
-                <h2 style={{ color: 'black' }}>Our Team</h2>
+                <h2 style={{ color: 'white' }}>Our Team</h2>
                 <div className="team-images">
                     <div className="team-member">
                         <img src={m1} alt="Team Member 1" className="team-image" />
