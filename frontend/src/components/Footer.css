@@ -52,13 +52,15 @@
 }
 
 .footer ul li a:hover {
-  color: #000; /* Darken link color on hover */
+  color: #ca1515; /* Darken link color on hover */
 }
 
 .footer-bottom {
   background-color: #222;
   padding: 10px 0; /* Reduce padding for smaller screens */
   margin-top: 20px;
+  color: #d3c5c5;
+  
 }
 
 .footer-bottom p {
@@ -78,5 +80,45 @@
   .footer .col-md-4 {
     max-width: 100%;
     text-align: center;
+  }
+}
+
+
+/* General styles for the paragraph */
+.responsive-paragraph {
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 400px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.responsive-paragraph:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments for tablets and below */
+@media (max-width: 768px) {
+  .responsive-paragraph {
+    width: 90%;
+    padding: 15px;
+    font-size: 1em;
+  }
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 576px) {
+  .responsive-paragraph {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9em;
   }
 }

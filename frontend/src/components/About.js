@@ -46,7 +46,7 @@ const About = () => {
                         <img src={m3} alt="Team Member 3" className="team-image" />
                         <div className="member-info">
                             <h3 style={{ color: 'white' }}>Title</h3>
-                            <p style={{ color: 'black' }}>Name</p>
+                            <p style={{ color: 'white' }}>Name</p>
                         </div>
                     </div>
                 </div>

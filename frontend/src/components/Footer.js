@@ -11,9 +11,10 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-4">
             <h5>About Us</h5>
-            <p>
-              We are a leading provider of high-quality products and services. Our mission is to help our customers achieve their goals by providing them with the best solutions for their needs.
-            </p>
+            <p className="responsive-paragraph">
+  We are a leading provider of high-quality products and services. Our mission is to help our customers achieve their goals by providing them with the best solutions for their needs.
+</p>
+
           </div>
           <div className="col-md-4">
             <h5>Quick Links</h5>
